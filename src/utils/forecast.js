@@ -15,7 +15,7 @@ const forecast = (long, lat, callback) => {
         else{
             const currentData = body.current;
             // console.log(currentData.weather_descriptions[0]+". It is currently "+ currentData.temperature + " degrees out. It feels like "+ currentData.feelslike + " degrees out.");
-            callback(undefined, currentData.weather_descriptions[0]+". It is currently "+ currentData.temperature + " degrees out. It feels like "+ currentData.feelslike + " degrees out.");
+            callback(undefined, currentData.weather_descriptions[0]+". It is currently "+ currentData.temperature + " degrees out. It feels like "+ currentData.feelslike + " degrees out. The humidity is "+ currentData.humidity +"%.");
         }
     });
 }
